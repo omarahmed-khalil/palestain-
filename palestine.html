@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PalestineTube - كل شيء عن فلسطين</title>
+  <!-- تنسيق CSS مدمج -->
+  <style>
+    /* تنسيق أساسي للموقع */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    /* الحاوية المركزية */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    /* رأس الموقع */
+    header {
+      background-color: #004d40;
+      color: #fff;
+      padding: 10px 0;
+    }
+    
+    header .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    header h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    
+    header nav ul li {
+      margin: 0 15px;
+    }
+    
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    /* قسم المقدمة */
+    #hero {
+      /* استخدم صورة بانر عامة لفلسطين */
+      background: url('https://source.unsplash.com/featured/?palestine') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+    
+    #hero .container {
+      width: 100%;
+    }
+    
+    #hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    
+    #hero button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #ff5722;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    #hero button:hover {
+      background-color: #e64a19;
+    }
+    
+    /* الأقسام العامة */
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    section p, section ul {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    
+    /* تنسيق معرض الصور */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px;
+      border: 3px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    /* مقاطع الفيديو */
+    .videos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .videos iframe {
+      margin: 20px 0;
+      max-width: 100%;
+    }
+    
+    /* قسم المراجع */
+    #references ul {
+      list-style: none;
+      line-height: 1.8;
+    }
+    
+    #references ul li a {
+      color: #ff5722;
+      text-decoration: none;
+    }
+    
+    #references ul li a:hover {
+      text-decoration: underline;
+    }
+    
+    /* التذييل */
+    footer {
+      background-color: #004d40;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- الرأس -->
+  <header>
+    <div class="container">
+      <h1>PalestineTube</h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">الرئيسية</a></li>
+          <li><a href="#history">التاريخ</a></li>
+          <li><a href="#cities">المدن</a></li>
+          <li><a href="#martyrs">الشهداء</a></li>
+          <li><a href="#gallery">معرض الصور</a></li>
+          <li><a href="#videos">الفيديوهات</a></li>
+          <li><a href="#references">المراجع</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- قسم المقدمة -->
+  <section id="hero">
+    <div class="container">
+      <h2>مرحباً بكم في PalestineTube</h2>
+      <p>مصدر شامل لكل ما يتعلق بفلسطين: تاريخها، مدنها، أبطالها، وثقافتها.</p>
+      <button id="exploreBtn">استكشف المزيد</button>
+    </div>
+  </section>
+
+  <!-- قسم التاريخ -->
+  <section id="history">
+    <div class="container">
+      <h2>تاريخ فلسطين</h2>
+      <p>
+        تمتلك فلسطين تاريخاً عريقاً يمتد لآلاف السنين. من العصور القديمة إلى الأحداث الحديثة، تتحدث الصفحات عن حضارات وتراث غني.
+        للمزيد اقرأ كتاب <a href="https://www.goodreads.com/book/show/221758.The_Iron_Cage" target="_blank">The Iron Cage</a> لـ رشيد خالدي، وكتاب 
+        <a href="https://www.goodreads.com/book/show/6576656-palestine" target="_blank">Palestine: A Four Thousand Year History</a> لـ نور مصالحة.
+      </p>
+    </div>
+  </section>
+
+  <!-- قسم المدن -->
+  <section id="cities">
+    <div class="container">
+      <h2>المدن الفلسطينية</h2>
+      <ul>
+        <li>
+          القدس: قلب الروح والتاريخ.  
+          <br>
+          <img src="https://source.unsplash.com/featured/?jerusalem" alt="القدس" width="300" height="200">
+        </li>
+        <li>
+          غزة: مدينة النضال والصمود.  
+          <br>
+          <img src="https://source.unsplash.com/featured/?gaza" alt="غزة" width="300" height="200">
+        </li>
+        <li>
+          نابلس: تاريخ وثقافة نابضة بالحياة.  
+          <br>
+          <img src="https://source.unsplash.com/featured/?nablus" alt="نابلس" width="300" height="200">
+        </li>
+        <li>
+          رام الله: مركز النشاط السياسي والثقافي.
+        </li>
+        <li>
+          الخليل: مدينة الحضارة والتعايش.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- قسم الشهداء -->
+  <section id="martyrs">
+    <div class="container">
+      <h2>شهداء فلسطين</h2>
+      <p>
+        تكريماً لأولئك الذين ضحّوا بحياتهم من أجل الحرية والكرامة. نذكر هنا بعض الأسماء البارزة ونروي قصصاً تثبت قوة الإرادة والصمود.
+        يمكنك قراءة المزيد عن القضية الفلسطينية في كتاب <a href="https://www.goodreads.com/book/show/28663.The_Question_of_Palestine" target="_blank">The Question of Palestine</a> لإدوارد سعيد.
+      </p>
+    </div>
+  </section>
+
+  <!-- قسم معرض الصور -->
+  <section id="gallery">
+    <div class="container">
+      <h2>معرض الصور</h2>
+      <div class="gallery">
+        <!-- صور توضيحية من Unsplash -->
+        <img src="https://source.unsplash.com/featured/?palestinian-landscape" alt="منظر طبيعي">
+        <img src="https://source.unsplash.com/featured/?palestine-culture" alt="ثقافة فلسطين">
+        <img src="https://source.unsplash.com/featured/?palestinian-architecture" alt="عمارة فلسطينية">
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم الفيديوهات -->
+  <section id="videos">
+    <div class="container">
+      <h2>مقاطع الفيديو</h2>
+      <div class="videos">
+        <!-- فيديو 1: وثائقي عن فلسطين -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ttq9q4ImZrA" 
+                title="وثائقي عن فلسطين" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+        <!-- فيديو 2: تاريخ فلسطين -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3kEHW6gjoWo" 
+                title="تاريخ فلسطين" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم المراجع -->
+  <section id="references">
+    <div class="container">
+      <h2>المراجع والمصادر</h2>
+      <ul>
+        <li>
+          <strong>The Iron Cage</strong> لـ رشيد خالدي
+          - <a href="https://www.goodreads.com/book/show/221758.The_Iron_Cage" target="_blank">قراءة المزيد</a>
+        </li>
+        <li>
+          <strong>Palestine: A Four Thousand Year History</strong> لـ نور مصالحة
+          - <a href="https://www.goodreads.com/book/show/6576656-palestine" target="_blank">قراءة المزيد</a>
+        </li>
+        <li>
+          <strong>The Question of Palestine</strong> لـ إدوارد سعيد
+          - <a href="https://www.goodreads.com/book/show/28663.The_Question_of_Palestine" target="_blank">قراءة المزيد</a>
+        </li>
+        <li>
+          مواقع إلكترونية ذات مصداقية:
+          <ul>
+            <li><a href="https://www.aljazeera.net/" target="_blank">الجزيرة نت</a></li>
+            <li><a href="https://www.middleeasteye.net/" target="_blank">Middle East Eye</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- تذييل الصفحة -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 PalestineTube. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- جافاسكريبت مدمج -->
+  <script>
+    // عند الضغط على زر "استكشف المزيد" يتم الانتقال إلى قسم التاريخ
+    document.getElementById('exploreBtn').addEventListener('click', function () {
+      document.getElementById('history').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
